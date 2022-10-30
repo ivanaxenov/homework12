@@ -3,8 +3,8 @@ public class Book {
     private int year;
     private Author author;
 
-    public Book(Author Author, String title, int year) {
-        this.author = (Author) Author;
+    public Book(Author author, String title, int year) {
+        this.author = author;
         this.title = title;
         this.year = year;
 
@@ -19,16 +19,12 @@ public class Book {
     }
 
     public Author getAuthor() {
-        return (Author) this.author;
+        return author;
     }
 
     public void setYear(int year) {
         this.year = year;
 
-    }
-
-    public String toString() {
-        return getAuthor().name + " " + getAuthor().lastName + " ";
     }
 
 

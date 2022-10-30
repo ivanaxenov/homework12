@@ -1,6 +1,7 @@
 public class Author {
-    String name;
-    String lastName;
+    private String name;
+    private String lastName;
+
 
     public Author(String name, String lastName) {
         this.name = name;
@@ -9,11 +10,11 @@ public class Author {
     }
 
     public String getName() {
-        return this.name;
+        return name;
     }
 
     public String getLastName() {
-        return this.lastName;
+        return lastName;
     }
 
 
